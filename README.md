@@ -128,19 +128,8 @@ flowchart LR
 
 Prerequisites:
 - Python 3.13+
-- [uv](https://github.com/astral-sh/uv) (recommended) or pip
+-  (recommended) or pip
 
-```bash
-# Clone the repository
-git clone <repo_url>
-cd icd10
-
-# Install dependencies using uv
-uv sync
-
-# OR using pip (if prefered)
-pip install .
-```
 
 ## Configuration
 
@@ -157,7 +146,7 @@ NEON_DB_URL="postgresql://user:password@host/dbname..." # Optional: for Neon DB 
 
 ### Prerequisites
 - Python 3.13+
-- `uv` (recommended) or `pip`
+- [uv](https://github.com/astral-sh/uv) (recommended) or `pip`
 
 ### Installation
 ```bash
