@@ -162,7 +162,7 @@ NEON_DB_URL="postgresql://user:password@host/dbname..." # Optional: for Neon DB 
 ### Installation
 ```bash
 # Clone the repository
-git clone [<repo-url>](https://github.com/yashg505/icd_10.git)
+git clone https://github.com/yashg505/icd_10.git
 cd icd10
 
 # Install dependencies using uv
