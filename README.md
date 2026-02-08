@@ -40,8 +40,8 @@ We explored multiple strategies. This repository implements the **RAG-style pipe
 3. **Similarity matching (alternative)**
    - Map notes to an embedding space, find nearest ICD code based on similarity.
    - When a new note arrives, return the nearest code by distance.
-   - Pros: fast and simple.
-   - Cons: weak reasoning and fragile with small-per-class data.
+   - Pros: fast and simple and explainable
+   - Cons: fragile with small-per-class data.
 
 ### How current approach could be improved:
 Based on experiments, I found following gaps:
