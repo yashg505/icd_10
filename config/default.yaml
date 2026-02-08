@@ -1,0 +1,32 @@
+input_csv: data/train.csv
+output_csv: data/test/icd_predictions.csv
+dataset_url: https://huggingface.co/datasets/Ahmad0067/MedSynth/resolve/main/MedSynth_huggingface_final.csv
+limit: 300
+seed: 42
+summary_model: gpt-5-mini
+selector_model: gpt-5-mini
+skip_summarization: false
+skip_rerank: false
+retrieve_top_k: 20
+rerank_top_k: 8
+reranker_type: medcpt # options: medcpt, sapbert
+final_top_k: 5
+blend_alpha: 0.2
+force_rebuild_artifacts: false
+summary_concurrency: 20
+selector_concurrency: 10
+mlflow: True
+mlflow_experiment: icd10-pipeline
+mlflow_tracking_uri: http://127.0.0.1:5000
+neon_dsn_env: NEON_DB_URL
+neon_table: icd_predictions
+neon: true
+csv: false
+summary_model_options:
+  - gpt-5-mini
+  - gpt-5
+  - gpt-4.1
+selector_model_options:
+  - gpt-5-mini
+  - gpt-5
+  - gpt-5.2
