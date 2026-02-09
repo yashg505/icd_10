@@ -124,24 +124,6 @@ flowchart LR
 - **MLflow** for experiment tracking
 - **Neon (Postgres)** for optional logging
 
-## Installation
-
-Prerequisites:
-- Python 3.13+
--  (recommended) or pip
-
-
-## Configuration
-
-1. Create a `.env` file in the root directory.
-2. Add the following environment variables:
-
-```bash
-OPENAI_API_KEY="openai_api_key"
-MLFLOW_TRACKING_URI="sqlite:///mlruns.db"  # or  MLflow tracking URI
-NEON_DB_URL="postgresql://user:password@host/dbname..." # Optional: for Neon DB logging
-```
-
 ## Getting Started
 
 ### Prerequisites
