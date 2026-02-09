@@ -150,7 +150,7 @@ This project uses environment variables loaded from a `.env` file at the repo ro
 # .env (example)
 OPENAI_API_KEY=sk-...
 NEON_DB_URL=postgres://...
-MLFLOW_TRACKING_URI=http://127.0.0.1:5000
+MLFLOW_TRACKING_URI=sqlite:///mlruns.db
 ```
 
 Runtime parameters live in `config/default.yaml` and can be overridden via CLI flags.
